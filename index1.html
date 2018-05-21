@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>5-19（卢峥-邱跃耀）</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index1.css" />
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <span>Welcome</span>
+        <span class="sp">Showtime is going to start right away</span>
+        <div id="time">
+            <img src="./day/日历5.png" alt="" id="month">
+            <img src="./day/日历1.png" alt="" id="day">
+        </div>
+        <a href="#" class="mine">
+            <img src="./image/mine.png" alt="图片未显示">
+        </a>
+        <a href="#" class="notes">
+            <img src="./image/notes.png" alt="图片未显示">
+        </a>
+        <a href="#" class="share">
+            <img src="./image/share.png" alt="图片未显示">
+        </a>
+    </header>
+    <div id="navigation">
+        <ul>
+            <li id="first">
+                <a href="" class="a">首页</a>
+                <ul>
+                    <li>
+                        <a href="../html/index-1.html">不存在的</a>
+                    </li>
+                    <li>
+                        <a href="../html/index-2.html">什么都没</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../html/index1.html" class="a">一</a>
+            </li>
+            <li>
+                <a href="../html/index2.html" class="a">二</a>
+            </li>
+            <li>
+                <a href="../html/index3.html" class="a">三</a>
+            </li>
+            <li id="xialacaidan">
+                <a href="#" class="a">下拉菜单</a>
+                <ul>
+                    <li>
+                        <a href="https://www.baidu.com/" target="_blank">百度</a>
+                    </li>
+                    <li>
+                        <a href="https://www.playbattlegrounds.com/main.pu" target="_blank">PUBG</a>
+                    </li>
+                    <li>
+                        <a href="http://lol.qq.com/" target="_blank">LOL</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="member">
+            <div>
+                <p>团队名字： </p>
+                <span>别浪</span>
+            </div>
+            <div>
+                <p>姓名：</p>
+                <span>卢峥</span>
+            </div>
+            <div>
+                <p>班级：</p>
+                <span>17-软工一班</span>
+            </div>
+            <div>
+                <p>爱好：</p>
+                <span>打游戏</span>
+            </div>
+        </div>
+        <div class="member">
+            <div>
+                <p>团队口号：</p>
+                <span>猥琐发育</span>
+            </div>
+            <div>
+                <p>姓名：</p>
+                <span>邱跃耀</span>
+            </div>
+            <div>
+                <p>班级：</p>
+                <span>17-软工一班</span>
+            </div>
+            <div>
+                <p>爱好：</p>
+                <span>打游戏</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var dayarray = new Array("./day/日历1.png", "./day/日历2.png", "./day/日历3.png", "./day/日历4.png", "./day/日历5.png", "./day/日历6.png", "./day/日历7.png", "./day/日历8.png",
+                "./day/日历9.png", "./day/日历10.png", "./day/日历11.png", "./day/日历12.png", "./day/日历13.png", "./day/日历14.png", "./day/日历15.png", "./day/日历16.png", "./day/日历17.png",
+                "./day/日历18.png", "./day/日历19.png", "./day/日历20.png", "./day/日历21.png", "./day/日历22.png", "./day/日历23.png", "./day/日历24.png", "./day/日历25.png", "./day/日历26.png",
+                "./day/日历27.png", "./day/日历28.png", "./day/日历29.png", "./day/日历30.png", "./day/日历31.png");
+            var montharray = new Array("./day/日历1.png", "./day/日历2.png", "./day/日历3.png", "./day/日历4.png", "./day/日历5.png", "./day/日历6.png", "./day/日历7.png", "./day/日历8.png",
+                "./day/日历9.png", "./day/日历10.png", "./day/日历11.png", "./day/日历12.png", );
+            var day = document.getElementById("day");
+            var month = document.getElementById("month");
+            var nowdate = new Date();
+            for (var i = 0; i < dayarray.length; i++) {
+                console.log(nowdate.getDate());
+                if (parseInt(nowdate.getDate()) == i + 1) {
+                    day.src = dayarray[i];
+                }
+            }
+            for (var j = 0; j < montharray.length; j++) {
+                console.log(nowdate.getMonth());
+                if (parseInt(nowdate.getMonth()) == j) {
+                    month.src = montharray[j];
+                }
+            }
+        }</script>
+</body>

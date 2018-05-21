@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 100px;
+    background-color: #38b0de;
+}
+header>span{
+    margin-left: 20px;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    line-height: 100px;
+}
+.sp{
+    margin-left: 400px;
+    font-family: "华文行楷";
+}
+a{
+    text-decoration: none;
+    color: #38b0de;
+}
+li{
+    transition: all 2s;
+}
+#time{
+    float: right;
+}
+.mine{
+    margin-right: 10px;
+    float: right;
+}
+.share{
+    float: right;
+}
+.notes{
+    float: right;
+}
+header img{
+    margin-top: 60px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+#navigation{
+    margin: 0 auto;
+    width: 800px;
+    height: 30px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    line-height: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 2px solid #38b0de;
+}
+#navigation>ul{
+    list-style-type: none;
+}
+#navigation>ul>li{
+    height: 30px;
+    width: 160px;
+    float: left;
+}
+#navigation>ul>li:hover{
+    background-color: #38b0de;
+}
+#navigation>ul>li:hover .a{
+    color: #fff;
+}
+
+#first>a{
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #38b0de;
+}
+#first>ul{
+    list-style-type: none;
+    display: none;
+}
+#first>ul>li{
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-left: 1px solid #38b0de;
+    border-right: 1px solid #38b0de;
+    border-bottom: 1px solid #38b0de;
+
+}
+#first:hover ul{
+    display: block;
+}
+#first>ul>li:hover{
+    background-color: #38b0de;
+}
+#first>ul>li:hover a{
+    color: #fff;
+}
+
+#xialacaidan>ul{
+    list-style-type: none;
+    display: none;
+}
+#xialacaidan>ul>li{
+    height: 40px;
+    line-height: 40px;
+    border-left: 1px solid #38b0de;
+    border-right: 1px solid #38b0de;
+    border-bottom: 1px solid #38b0de;
+}
+#xialacaidan:hover ul{
+    display: block;
+}
+#xialacaidan>ul>li:hover{
+    background-color: #38b0de;
+}
+#xialacaidan>ul>li:hover a{
+    color: #fff;
+}
+
+.content{
+    background-color: #f5f5f5;
+    width: 800px;
+    margin: 80px auto;
+    height: 1000px;
+}
+.member{
+    float: left;
+    width: 400px;
+    height: 1000px;
+}
+.member p{
+    margin-top: 60px;
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-family: "微软雅黑";
+    color: #424242;
+}
+.member span{
+    color: #424242;
+    font-family: "微软雅黑";
+    margin-left: 20px;
+}
+.member>div>p{
+    display: inline-block;
+}
+.member>span{
+    
+}
